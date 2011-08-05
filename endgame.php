@@ -44,12 +44,27 @@ class Endgame {
     // create resource key, only used by throttle right now but could be useful for other things
     $this->resource_key = $_SERVER['REQUEST_METHOD'].preg_replace("/[^a-zA-Z0-9\s]/",'_',$_SERVER['REDIRECT_URL']);
     // get username
-    $this->user['username'] = (isset($_SERVER['PHP_AUTH_USER'])) ? $_SERVER['PHP_AUTH_USER'] : false;
+    if(isset($_SERVER['PHP_AUTH_USER'])){
+      $this->user['username'] = $_SERVER['PHP_AUTH_USER'];
+    } else if ($this->request->check('auth_user')){
+      $this->user['username'] = $this->request->auth_user;
+    } else {
+      $this->user['username'] = false;
+    }
     // get password
-    $this->user['password'] = (isset($_SERVER['PHP_AUTH_PW'])) ? $_SERVER['PHP_AUTH_PW'] : false;
-    // start session with id set as a hash of client's IP address + username
-    if ($this->user['username']!==false) $this->session = new SessionWrapper( md5( $this->security->clientIP() . $this->user['username'] ) , 'endgame_session' );
-    else $this->session = new SessionWrapper(null,'endgame_session');
+    if(isset($_SERVER['PHP_AUTH_PW'])){
+      $this->user['password'] = $_SERVER['PHP_AUTH_PW'];
+    } else if ($this->request->check('auth_pw')){
+      $this->user['password'] = $this->request->auth_pw;
+    } else {
+      $this->user['password'] = false;
+    }
+    if ($this->user['username']!==false) {
+      // start session with id set as a hash of client's IP address + username
+      $this->session = new SessionWrapper( md5( $this->security->clientIP() . $this->user['username'] ) , 'endgame_session' );
+    } else {
+      $this->session = new SessionWrapper(null,'endgame_session');
+    }
     $this->session->open();
   }
   
@@ -78,7 +93,7 @@ class Endgame {
       if (!$result) die('Invalid Query: '.mysql_error());
       $result = mysql_fetch_array($result);
       // if query was successful
-      if($result[0]){
+      if($result[0]!==false){
         // hash the user-supplied password
         $hash = $this->security->hash($pass);
         $group = $result[$this->config->auth_groupfield];
@@ -105,8 +120,8 @@ class Endgame {
         $this->endgame_log->message('unsuccessful login: username not found');
       }
     } else {
-      $this->output['meta']['message'] = 'Missing HTTP Auth Headers';
-      $this->endgame_log->message('unsuccessful login: missing auth headers');
+      $this->output['meta']['message'] = 'Missing Authentication Credentials';
+      $this->endgame_log->message('unsuccessful login: missing auth creds');
     }
     return false;
   }
@@ -469,7 +484,7 @@ class SessionWrapper extends ArrayIterator {
 class RequestWrapper extends ArrayIterator {
   
   public function __construct(){
-    $this->_parseExtraParams();
+    $this->_parseParams();
   }
   
   public function __get($key) {
@@ -483,7 +498,7 @@ class RequestWrapper extends ArrayIterator {
     return $value;
   }
   
-  private function _parseExtraParams() {
+  private function _parseParams() {
     $method = $_SERVER['REQUEST_METHOD'];
     if ($method == 'PUT' || $method == 'DELETE') {
       parse_str(file_get_contents('php://input'), $params);
