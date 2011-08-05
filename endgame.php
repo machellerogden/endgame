@@ -14,6 +14,17 @@
  * @version     0.5
  * @author      C Mac Heller-Ogden
  *
+ * ****************************************************************************
+ * IMPORTANT NOTE ABOUT CREDITS!!!!!!!!
+ * Please note that when I started work on this framework I never intended to
+ * release it publicly and now that I am releasing it publicly, I'm afraid I'm
+ * missing some credits. While 90% of everything here is original code, there
+ * are definately a few bits here and there which I've taken from sources
+ * around the web and I'm ashamed to say I can't for the life of me remember
+ * their source. If you see anything here that you think you should be credited
+ * for, please let me know.
+ * ****************************************************************************
+ *
  */
 
 class Endgame {
