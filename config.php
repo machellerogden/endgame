@@ -25,6 +25,9 @@ $config = array(
   # name
   'app_name' => 'Endgame Example App',
   
+  # admin email
+  'admin_email' => 'support@your-domain.com',
+  
   # log file location
   'endgame_log_path' => '/tmp/endgame_log', // .yyyy-mm-dd.log will be appended to whatever filename you set here
   

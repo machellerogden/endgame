@@ -123,7 +123,7 @@ class Endgame {
     $blacklisted = $this->security->blacklistCheck($ip);
     if($blacklisted){
       $this->endgame_log->message('blacklisted IP attempt to register failed');
-      $this->sendError('Access Denied: Your IP appears to be blacklisted. If believe you\'re receiving this message in error please contact support@pixeldreamer.net');
+      $this->sendError('Access Denied: Your IP appears to be blacklisted. If believe you\'re receiving this message in error please contact '.$this->config->admin_email);
     } else {
       // get username and password from POST if set, else set false
       $u = $this->request->check('username') ? $this->request->username : false;
