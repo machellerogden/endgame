@@ -511,7 +511,7 @@ class RequestWrapper extends ArrayIterator {
   
   private function _parseParams() {
     $method = $_SERVER['REQUEST_METHOD'];
-    if ($method == 'PUT' || $method == 'DELETE') {
+    if ($method == 'PUT' || $method == 'DELETE' || $method == 'OPTIONS') {
       parse_str(file_get_contents('php://input'), $params);
       $GLOBALS["_{$method}"] = $params;
       // Add these request vars into _REQUEST, mimicing default behavior, PUT/DELETE will override existing COOKIE/GET vars

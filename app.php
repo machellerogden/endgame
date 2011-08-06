@@ -38,6 +38,19 @@ class App extends Endgame {
     $this->render('example');
   }
   
+  # Example Registration Methods
+  public function registerUser(){
+    $this->register();
+    $this->send();
+  }
+  
+  public function registerSuper(){
+    // you can comment out the authentication line below and register yourself as a super user if you're just getting things setup but remember to remove the comment when you're done (or remove this method entirely if you'll be the only super user)
+    $this->auth(PERMIT_SUPER) or $this->deny();
+    $this->register(0);
+    $this->send();
+  }
+  
 }
 
 
@@ -51,6 +64,9 @@ $app->get('/xml-example/:param1/:param2/:param3','xmlExample');
 $app->get('/jpg/:filename','fileExample');
 $app->get('/view-example','viewExample');
 
+# Example Registration Mappings
+$app->post('/register','registerUser');
+$app->post('/registerSuper','registerSuper');
 
 # ...and GO!
 $app->run();
@@ -67,20 +83,35 @@ machine api.getstashe.com
 login your@email.com
 password YoUrPaSsWoRd
 
-
 You won't be able to test any of the authenticated mappings unless you complete
 the above step FIRST. Once that's done, you can test everything to your hearts
 delight.
 
 Here are some examples:
 
-  $ curl -nX OPTIONS http://localhost/resource/
-  $ curl -nX GET "http://localhost/resource/?someparam=val1&someotherparam=val2"
-  $ curl -nX PUT http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
-  $ curl -nX POST http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
-  $ curl -nX DELETE http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
-  
-*************************************************************************** */
+curl -nX OPTIONS http://localhost/resource/
+curl -nX GET "http://localhost/resource/?someparam=val1&someotherparam=val2"
+curl -nX PUT http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
+curl -nX POST http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
+curl -nX DELETE http://localhost/resource/ -d someparam=val1 -d someotherparam=val2
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+UPDATED 2011-08-06
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Because of the lack of access to PHP_AUTH_USER and PHP_AUTH_PW on some server's
+(because of PHP-CGI), I've added support for supplying login credentials as
+request paramaters ('auth_user', 'auth_pw')
+
+Here are the above examples again but this time using request parameters:
+
+curl -X OPTIONS http://localhost/resource/ -d "auth_user=your@email.com" -d "auth_pw=YoUrPaSsWoRd"
+curl -X GET "http://localhost/resource/?auth_user=your@email.com&auth_pw=YoUrPaSsWoRd&someparam=val1&someotherparam=val2"
+curl -X PUT http://localhost/resource/ -d "auth_user=your@email.com" -d "auth_pw=YoUrPaSsWoRd" -d someparam=val1 -d someotherparam=val2
+curl -X POST http://localhost/resource/ -d "auth_user=your@email.com" -d "auth_pw=YoUrPaSsWoRd" -d someparam=val1 -d someotherparam=val2
+curl -X DELETE http://localhost/resource/ -d "auth_user=your@email.com" -d "auth_pw=YoUrPaSsWoRd" -d someparam=val1 -d someotherparam=val2
+
+*************************************************************************** */
 
 ?>
