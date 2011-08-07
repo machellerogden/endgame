@@ -66,7 +66,7 @@ $app->get('/view-example','viewExample');
 
 # Example Registration Mappings
 $app->post('/register','registerUser');
-$app->post('/registerSuper','registerSuper');
+$app->post('/register-super','registerSuper');
 
 # ...and GO!
 $app->run();
