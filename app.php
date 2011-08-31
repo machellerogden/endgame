@@ -7,50 +7,50 @@
  */
  
 class App extends Endgame {
-  
-  public function __construct($config=array()){
-    parent::__construct($config);
-  }
-  
-  # Example Methods (associated resource mappings below)
-  // Simple JSON Example
-  public function jsonExample($params) {
-    $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
-    $this->output['data'] = $params;
-    $this->send();
-  }
-  // Simple XML Example
-  public function xmlExample($params){
-    $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
-    $this->throttle(10); // custom method throttle example, 10 reqs / min -- note that this will run in addition to the global throttle
-    $this->output['data'] = $params;
-    $this->send('200','xml');
-  }
-  // File Download Example
-  public function fileExample($params){
-    $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
-    extract($params);
-    $this->sendFile('result.jpg','image/jpeg',getenv('DOCUMENT_ROOT').'/resources/images/'.$filename.'.jpg');
-  }
-  // Basic Templating Example
-  public function viewExample(){
-    $this->output['message'] = 'This is an example!';
-    $this->render('example');
-  }
-  
-  # Example Registration Methods
-  public function registerUser(){
-    $this->register();
-    $this->send();
-  }
-  
-  public function registerSuper(){
-    // you can comment out the authentication line below and register yourself as a super user if you're just getting things setup but remember to remove the comment when you're done (or remove this method entirely if you'll be the only super user)
-    $this->auth(PERMIT_SUPER) or $this->deny();
-    $this->register(0);
-    $this->send();
-  }
-  
+    
+    public function __construct($config=array()){
+        parent::__construct($config);
+    }
+    
+    # Example Methods (associated resource mappings below)
+    // Simple JSON Example
+    public function jsonExample($params) {
+        $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
+        $this->output['data'] = $params;
+        $this->send();
+    }
+    // Simple XML Example
+    public function xmlExample($params){
+        $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
+        $this->throttle(10); // custom method throttle example, 10 reqs / min -- note that this will run in addition to the global throttle
+        $this->output['data'] = $params;
+        $this->send('200','xml');
+    }
+    // File Download Example
+    public function fileExample($params){
+        $this->auth(PERMIT_SYSTEM_USERS) or $this->deny();
+        extract($params);
+        $this->sendFile('result.jpg','image/jpeg',getenv('DOCUMENT_ROOT').'/resources/images/'.$filename.'.jpg');
+    }
+    // Basic Templating Example
+    public function viewExample(){
+        $this->output['message'] = 'This is an example!';
+        $this->render('example');
+    }
+    
+    # Example Registration Methods
+    public function registerUser(){
+        $this->register();
+        $this->send();
+    }
+    
+    public function registerSuper(){
+        // you can comment out the authentication line below and register yourself as a super user if you're just getting things setup but remember to remove the comment when you're done (or remove this method entirely if you'll be the only super user)
+        $this->auth(PERMIT_SUPER) or $this->deny();
+        $this->register(0);
+        $this->send();
+    }
+    
 }
 
 

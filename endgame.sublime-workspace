@@ -1,0 +1,543 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/pixeldreamer/github/endgame/app.php",
+			"settings":
+			{
+				"buffer_size": 4373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/config.php",
+			"settings":
+			{
+				"buffer_size": 2387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/dbsetup.sql",
+			"settings":
+			{
+				"buffer_size": 232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/index.php",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/LICENSE",
+			"settings":
+			{
+				"buffer_size": 1084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/README",
+			"settings":
+			{
+				"buffer_size": 198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/pixeldreamer/github/endgame/endgame.php",
+			"settings":
+			{
+				"buffer_size": 28220,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392,
+		"selected_items":
+		[
+			[
+				"",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 440
+	},
+	"console":
+	{
+		"height": 115
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/pixeldreamer/github/endgame/config.php",
+		"/Users/pixeldreamer/github/endgame/dbsetup.sql",
+		"/Users/pixeldreamer/github/endgame/index.php",
+		"/Users/pixeldreamer/github/endgame/LICENSE",
+		"/Users/pixeldreamer/github/endgame/README",
+		"/Users/pixeldreamer/github/egexample/README",
+		"/Users/pixeldreamer/github/egexample/LICENSE",
+		"/Users/pixeldreamer/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/pixeldreamer/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Volumes/Pixly/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/footer.php",
+		"/Volumes/Pixly/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/style.css",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/style.css",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/single.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-shop.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-rental.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-oc.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-ld.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-hs.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-gi.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-ee.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-al.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sidebar-about.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/shop-rental.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/shop-inventory.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/shop-intro.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/shop-gallery.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/shop-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/searchform.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/search.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/page.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/oc-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-studio.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-shop.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-oc.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-ld.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-hs.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-gi.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-ee.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/nav-al.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/loop-single.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/loop-past.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/loop-page.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/loop-noheading.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-studio.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-multimedia-k-12.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-main.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-clay-k-3.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-clay-6-12.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ld-clay-3-5.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/index.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ie.css",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ie-all.css",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/hs-main.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/hs-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/homepage.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/header.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/gi-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/functions.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/about.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/al-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ee-content.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ee-main.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ee-past.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/ee-secondary.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/footer.php",
+		"/Users/pixeldreamer/Sites/museeheritage.ca/content/wp-content/themes/musee/sitemap.html",
+		"/Users/pixeldreamer/Desktop/ellabess/header.php",
+		"/Users/pixeldreamer/Desktop/ellabess/style.css",
+		"/Users/pixeldreamer/Desktop/ellabess/footer.php",
+		"/Users/pixeldreamer/Desktop/ellabess/loop-index.php",
+		"/Users/pixeldreamer/Desktop/ellabess/jScrollPane/style/jquery.jscrollpane.css",
+		"/Users/pixeldreamer/Desktop/ellabess/index.php",
+		"/Users/pixeldreamer/Desktop/ellabess/functions.php",
+		"/Users/pixeldreamer/Desktop/ellabess/sidebar-notification.php",
+		"/Users/pixeldreamer/Desktop/ellabess/loop-page.php",
+		"/Users/pixeldreamer/Desktop/ellabess/page.php",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/backup.sh",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/sidebar-ee.php",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/ee-content.php",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/functions.php",
+		"/Users/pixeldreamer/Desktop/ellabess/jquery.cookie.js",
+		"/Users/pixeldreamer/Desktop/ellabess/jquery.scrollbar.js",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/style.css",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/header.php",
+		"/Users/pixeldreamer/Sites/artgalleryofstalbert.ca/content/wp-content/themes/agsa/ee-main.php",
+		"/Users/pixeldreamer/Sites/grandcentraldc.com/content/wp-content/themes/gcdc/header.php",
+		"/Users/pixeldreamer/Sites/grandcentraldc.com/content/wp-content/themes/gcdc/loop-index.php",
+		"/Users/pixeldreamer/Sites/grandcentraldc.com/content/wp-content/themes/gcdc/loop-page.php",
+		"/Users/pixeldreamer/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/pixeldreamer/Library/Application Support/Sublime Text 2/Packages/CSS/cssreset.sublime-snippet",
+		"/Users/pixeldreamer/Library/Application Support/Sublime Text 2/Packages/HTML/xhtmlt.sublime-snippet",
+		"/Users/pixeldreamer/github/stashe/endgame.php",
+		"/Users/pixeldreamer/github/stashe/app.php"
+	],
+	"find":
+	{
+		"height": 33
+	},
+	"find_in_files":
+	{
+		"height": 85,
+		"include_history":
+		[
+			""
+		],
+		"location_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"  ",
+			"    ",
+			"  ",
+			"Art Gallery of St. Albert",
+			"fourhreecol",
+			"<li>",
+			"http",
+			"\\s*\\d\\.\\d.*\\n",
+			"\\s\\d\\.\\d\\s[.*]",
+			"\\s\\d\\.\\d\\s[.*]\\n",
+			"h3",
+			"div.sidebar",
+			"href",
+			"        </",
+			"href",
+			"        </",
+			"href",
+			"23px",
+			"3px",
+			"border-bottom:#95908e 1px solid;",
+			"sc",
+			"ho",
+			"e5bba1",
+			"Description",
+			"' ) ); ?>",
+			"#",
+			";",
+			"#",
+			";",
+			"rgba",
+			"' ); ?>/",
+			"jquery",
+			"http",
+			"nav",
+			"theme",
+			"Theme",
+			"nav",
+			"Theme",
+			"nav",
+			"Theme",
+			"form",
+			"submit",
+			"form",
+			"margin",
+			"Menus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    ",
+			"  ",
+			"    ",
+			"Mus&eacute;e Heritage Museum"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/pixeldreamer/github/endgame/app.php",
+					"settings":
+					{
+						"buffer_size": 4373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/pixeldreamer/github/endgame/config.php",
+					"settings":
+					{
+						"buffer_size": 2387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/pixeldreamer/github/endgame/dbsetup.sql",
+					"settings":
+					{
+						"buffer_size": 232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/pixeldreamer/github/endgame/index.php",
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/pixeldreamer/github/endgame/LICENSE",
+					"settings":
+					{
+						"buffer_size": 1084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/pixeldreamer/github/endgame/README",
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "/Users/pixeldreamer/github/endgame/endgame.php",
+					"settings":
+					{
+						"buffer_size": 28220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1194,
+								1194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0
+	},
+	"input":
+	{
+		"height": 0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0,
+			0.5,
+			1
+		],
+		"rows":
+		[
+			0,
+			1
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0,
+		"selected_items":
+		[
+		],
+		"width": 0
+	},
+	"select_project":
+	{
+		"height": 0,
+		"selected_items":
+		[
+		],
+		"width": 0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150,
+	"status_bar_visible": true
+}
